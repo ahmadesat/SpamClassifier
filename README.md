@@ -15,7 +15,9 @@ Written in Python code using Jupyter Notebook
 
 3.2. Create a folder named "dataset", and inside of it create two sub-folders "spam" and "ham"(non-spam). And put your own Dataset inside each of them.
 
-3.3 Run SpamClassifier.py
+4. Add your own messages to the array *examplesForTesting* that you want to check whether they are Spam or Not-Spam
+
+5. Run SpamClassifier.py
 
 
 Enjoy !
