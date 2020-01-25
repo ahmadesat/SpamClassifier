@@ -1,14 +1,21 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
 import os
 import io
-import numpy
+import numpy as np
 from pandas import DataFrame
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 from pathlib import Path
+path = os.path.join(Path().absolute(), "EmailSpamIdentifier/dataset")
 
-path = os.path.join(Path().absolute(), "dataset")
 
+# In[ ]:
 
 
 def readFiles(path):
@@ -43,9 +50,13 @@ data = data.append(dataFrameFromDirectory(os.path.join(path, "spam"), 'spam'))
 data = data.append(dataFrameFromDirectory(os.path.join(path, "ham"), 'not-spam'))
 
 
+# In[ ]:
+
+
 data.head()
 
 
+# In[ ]:
 
 
 vectorizer = CountVectorizer()
@@ -55,6 +66,8 @@ classifier = MultinomialNB()
 spamOrHam = data['class'].values
 classifier.fit(wordsCounter, spamOrHam) #This will create a model which will predict whether a future email is spam or not spam.
 
+
+# In[ ]:
 
 
 examplesForTesting = ["Win your free Car now!!!", "Hello my friend, you ready for the game tomorrow?"]
