@@ -4,7 +4,7 @@ Written in Python code using Jupyter Notebook
 (Based on *Naive Bayes* Model)
 
 ## How To Use:
-1. Download SpamClassifier.py
+1. Download SpamIdentifier-NaiveBayes.ipynb
 
 2. Download/Install all the required models used in the code (Using Anaconda3 interpreter can ease things up for you)
 
@@ -17,7 +17,7 @@ Written in Python code using Jupyter Notebook
 
 4. Add your own messages to the array *examplesForTesting* that you want to check whether they are Spam or Not-Spam
 
-5. Run SpamClassifier.py
+5. Run SpamIdentifier-NaiveBayes.ipynb
 
 
 Enjoy !
